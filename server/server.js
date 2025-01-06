@@ -13,9 +13,20 @@ app.get( '/', (req, res) => {
 app.post('/', (req,res) => {
 res.send('hello world')
 })
-app.post('/', (req,res) => {
+app.put('/', (req,res) => {
 res.send('hello world')
+const {name,id,user}=req.body
 })
+app.get('/login', (req,res) => {
+res.send('hello world')
+const {name,id,user}=req.body
+})
+
+
+
+
+
+
 
 
 const port = process.env.PORT || 5000;
